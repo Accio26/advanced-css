@@ -1,3 +1,5 @@
-node_module/
+node_modules/
+#node_modules delete
+
 package-lock.json
 package.json
