@@ -51,3 +51,24 @@
 
 ## そもそもHTML5とは？
 > HTML5とは、HTMLのバージョン5、改訂第5版です。 ウェブページを作成する際、以前にはHTML 4.01やXHTML1が標準的に利用されていましたが、 現在は次世代のウェブ環境に合わせて仕様策定されたHTML5が標準となっています。HTML 4やXHTML1の目的は、HTMLタグで構造付けされたHTML文書を作成することでした。 これらのバージョンのHTMLでは、作成された情報をただ公開している分には良いのですが、 ユーザーの操作に反応してなんらかの情報処理をする、いわゆるウェブアプリケーションを作成するには機能不足な面がありました。HTML5では、これまでのHTML 4と同じようなHTML文書を作成する機能が改良されているのに加えて、ウェブアプリケーションを開発するための様々な仕様が新たに盛り込まれています。 今までプラグインなどのHTML以外の技術を併用しないと実現できなかった機能のいくつかが、標準のHTMLやJavaScriptで比較的シンプルに実現できるようになっています。
+
+
+HTML5のhead部分とは？
+
+> HTMLのhead部分は、ページが読み込まれてもWebブラウザーには表示されない部分のことです。
+> この部分には`<title>`といった情報やCSSへのリンク、独自のファビコンへのリンク、そしてそのほかのメタデータ（HTMLを誰が書いたのとかそのHTMLを表現する重要なキーワードなど）の情報を含んでいます。
+
+メタデータ：`<meta>`要素
+> メタデータはデータを説明するデータで、HTMLには文書にメタデータを追加する「公式」な方法があります。
+> `<meta>`要素です。
+
+#### 作成者と説明を追加する
+多くの`<meta>`要素は`name`と`content`属性が含まれます。
+・`name`はmeta要素の種類を指定します。含まれる情報の種類です。
+・`content`は実際のメタコンテンツを指定します。
+
+ページに入れるのが便利な2つのメタ要素は、ページの著書を定義するものと、ページの説明(description)を与えるものです。例を見てみます。
+```html
+<meta name="author" content="Chris Mills">
+<meta name="description" content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to ge started with developing web sites and applications.">
+```
